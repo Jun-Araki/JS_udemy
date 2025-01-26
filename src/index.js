@@ -127,7 +127,7 @@
 // arr8[0] = 100;
 // console.log(arr4);
 
-const nameArr = ["小野", "高塩", "新木"];
+// const nameArr = ["小野", "高塩", "新木"];
 // for (let index = 0; index < nameArr.length; index++) {
 //     console.log(`${index +1}番目は${nameArr[index]}です`);
 // }
@@ -144,11 +144,53 @@ const nameArr = ["小野", "高塩", "新木"];
 // })
 // console.log(newNumArr);
 
-const newNumArr = nameArr.map((name)=> {
-    if(name === "新木"){
-        return name;
-    } else {
-        return `${name}さん`
-    }
-})
-console.log(newNumArr);
+// const newNumArr = nameArr.map((name)=> {
+//     if(name === "新木"){
+//         return name;
+//     } else {
+//         return `${name}さん`
+//     }
+// })
+// console.log(newNumArr);
+
+// 三項演算子
+// const val1 = 1 > 2 ? "trueです" : "falseです";
+// console.log(val1);
+// const num = "1300";
+// console.log(num.toLocaleString());
+
+// const formattedNum =
+//   typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
+// console.log(formattedNum);
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です";
+// };
+
+// console.log(checkSum(60, 50));
+
+// 論理演算子 && ||
+// const val = null;
+
+// if (val) {
+//   console.log("valはtruthyです");
+// } else {
+//   console.log("valはfalsyです");
+// }
+
+const flag1 = true;
+const flag2 = true;
+
+if (flag1 || flag2) {
+  console.log("1か2はtrue");
+}
+if (flag1 && flag2) {
+  console.log("1と2はtrue");
+}
+
+const num = 100;
+const fee = num || "金額未設定です";
+console.log(fee);
+
+const num2 = null;
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
